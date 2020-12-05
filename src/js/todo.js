@@ -17,7 +17,13 @@ function handleInsertTodoItem() {
 
 
 function handledeleteTodoItem(event) {
-
+    const li = event.target.parentNode;
+    const removeId = li.id;
+    ulTodoList.removeChild(li);
+    todoList = todoList.filter(todoItem => {
+        return todoItem.id !== parseInt(removeId);
+    });
+    saveTodoList(todoList);
 }
 
 function saveTodoList(todoList) {
