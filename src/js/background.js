@@ -16,7 +16,7 @@ function paintImage(imgNumber) {
     image.src = `./src/img/${imgNumber +1}.jpg`;
 
     image.classList.add("bgImage");
-    body.appendChild(image);
+    body.prepend(image);
 }
 
 

@@ -10,9 +10,13 @@ function initTodo() {
     paintTodoList(todoList);
 }
 
-function handleInsertTodoItem() {
-    todoList.push({ "id": newId(), "todo": jstodo.value });
+function handleInsertTodoItem(event) {
+    event.preventDefault();
+    const todoitem = { "id": newId(), "todo": jstodo.value };
+    jstodo.value = "";
+    todoList.push(todoitem);
     saveTodoList(todoList);
+    paintTodoItem(todoitem);
 }
 
 
