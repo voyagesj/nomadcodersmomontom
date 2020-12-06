@@ -8,17 +8,19 @@
 </head>
 
 <body>
+    <div class="layout">
+        <h2 class="js-time information time">00:00:00</h2>
+        <form name="greetingForm" id="greetingForm">
+            <input type="text" class="js-name hide underline" placeholder="Hello, What's YourName" />
+        </form>
+        <span class="js-greeting information"></span>
+        <form name="todoForm" id="todoForm">
+            <input type="text" class="js-todo underline" placeholder="insert Todo." />
+        </form>
+        <ul class="js-todoList information"></ul>
+        <h2 class="js-weather information"></h2>
 
-    <h2 class="js-time">00:00:00</h2>
-    <form name="greetingForm" id="greetingForm">
-        <input type="text" class="js-name .hide" placeholder="Hello, What's YourName" />
-    </form>
-    <span class="js-greeting"></span>
-    <form name="todoForm" id="todoForm">
-        <input type="text" class="js-todo" placeholder="insert Todo." />
-    </form>
-    <ul class="js-todoList"></ul>
-    <h2 class="js-weather"></h2>
+    </div>
     <script src="src/js/index.js?rev=20201206"></script>
     <script src="src/js/currentTime.js?rev=20201206"></script>
     <script src="src/js/greeting.js?rev=20201206"></script>

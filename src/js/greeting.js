@@ -2,6 +2,8 @@ const greetingForm = document.querySelector("#greetingForm");
 greetingForm.addEventListener("submit", handleInsertName);
 const jsname = greetingForm.querySelector(".js-name");
 
+
+
 function initUserName() {
     paintUserName();
 }
